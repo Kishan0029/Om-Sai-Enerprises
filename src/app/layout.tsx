@@ -9,6 +9,9 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Om Sai Enterprises | Reliable Manpower Supply Services in Belagavi",
   description: "Contract-based skilled, semi-skilled & unskilled manpower supply for industries in Belagavi, Karnataka. 1,400+ active workforce. Fully PF/ESI/GST compliant.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
