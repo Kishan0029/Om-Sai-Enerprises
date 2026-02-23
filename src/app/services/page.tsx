@@ -148,10 +148,10 @@ export default function ServicesPage() {
               <Users className="w-12 h-12 text-brand-red mb-6" />
               <h3 className="text-2xl font-heading font-bold mb-6">Blue Collar / Labour</h3>
               <div className="space-y-4 text-muted-foreground">
-                <p className="flex items-center gap-3">
-                  <ShieldCheck className="w-5 h-5 text-brand-red" />
-                  6–8% Daily Commission Basis
-                </p>
+                  <p className="flex items-center gap-3">
+                    <ShieldCheck className="w-5 h-5 text-brand-red" />
+                    4–8% Daily Commission Basis
+                  </p>
                 <p className="flex items-center gap-3">
                   <Check className="w-5 h-5 text-brand-red" />
                   Replacement as required
