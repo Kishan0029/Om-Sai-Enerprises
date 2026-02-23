@@ -19,6 +19,8 @@ import {
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
+{/* GIT TEST — DO NOT DELETE */}
+
 function TestimonialVideo({ src, label, name }: { src: string; label: string; name: string }) {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [playing, setPlaying] = useState(false)
