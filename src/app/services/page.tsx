@@ -10,6 +10,7 @@ const manpowerTypes = [
     items: [
       "CNC / VMC / HMC Operators",
       "Electricians & Fitters",
+      "Fettlers",
       "Moulders",
       "Core Setters",
       "Melting Operators",
@@ -33,7 +34,6 @@ const manpowerTypes = [
       "General Labourers",
       "Loading & Unloading Staff",
       "Cleaning & Maintenance",
-      "Fettlers",
       "General Helpers",
     ]
   }
