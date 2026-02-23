@@ -184,6 +184,61 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* Client Logo Marquee */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-center font-heading font-black text-brand-dark uppercase tracking-tighter mb-12 text-2xl md:text-3xl">
+            TRUSTED BY INDUSTRIES ACROSS <span className="text-brand-red">BELAGAVI</span>
+          </h2>
+        </div>
+        <div className="overflow-hidden relative w-full">
+          <style>{`
+            @keyframes marquee {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            .marquee-track {
+              display: flex;
+              width: max-content;
+              animation: marquee 35s linear infinite;
+            }
+            .marquee-track:hover {
+              animation-play-state: paused;
+            }
+          `}</style>
+          <div className="marquee-track">
+            {[
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/1-1771828846847.png?width=8000&height=8000&resize=contain", alt: "Akash Forming Technologies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/2-1771828845787.png?width=8000&height=8000&resize=contain", alt: "Ashok Iron Group" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/3-1771828846493.png?width=8000&height=8000&resize=contain", alt: "Belgaum Ferrocast" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/4-1771828846800.png?width=8000&height=8000&resize=contain", alt: "Creintors Group of Companies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/5-1771828845802.png?width=8000&height=8000&resize=contain", alt: "The Allied Founders Pvt. Ltd." },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/6-1771828846390.png?width=8000&height=8000&resize=contain", alt: "Shanti Foumach Private Limited" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/1-1771828846847.png?width=8000&height=8000&resize=contain", alt: "Akash Forming Technologies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/2-1771828845787.png?width=8000&height=8000&resize=contain", alt: "Ashok Iron Group" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/3-1771828846493.png?width=8000&height=8000&resize=contain", alt: "Belgaum Ferrocast" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/4-1771828846800.png?width=8000&height=8000&resize=contain", alt: "Creintors Group of Companies" },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/5-1771828845802.png?width=8000&height=8000&resize=contain", alt: "The Allied Founders Pvt. Ltd." },
+              { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b98ea27e-9b99-43cb-96f5-211c91ad1919/6-1771828846390.png?width=8000&height=8000&resize=contain", alt: "Shanti Foumach Private Limited" },
+            ].map((logo, idx) => (
+              <div
+                key={idx}
+                className="flex items-center justify-center shrink-0"
+                style={{ width: "220px", height: "100px", marginRight: "60px" }}
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-w-full max-h-full object-contain"
+                  style={{ padding: "8px" }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services Snapshot */}
       <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
