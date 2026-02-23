@@ -1,5 +1,5 @@
 [build]
-  command = "rm -rf node_modules .next && npm ci && npm rebuild lightningcss && npm run build"
+  command = "rm -rf node_modules .next && npm ci --unsafe-perm && npm rebuild lightningcss --update-binary && npm run build"
   publish = ".next"
 
 [build.environment]
